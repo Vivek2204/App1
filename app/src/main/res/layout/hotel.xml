@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:inputType="textPersonName"
+            android:text="Food Finder"
+            android:ems="10"
+            android:id="@+id/editText" android:gravity="center_horizontal|center_vertical"
+            android:background="@color/colorPrimaryDark"/>
+    <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="?android:attr/listDivider"
+    />
+    <EditText
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="List Of Hotels"
+            android:ems="10"
+            android:id="@+id/editText3" android:gravity="center_vertical"
+            android:textColor="@android:color/background_dark"/>
+
+
+    <SearchView
+            android:layout_width="203dp"
+            android:layout_height="45dp"/>
+    <TableLayout
+            android:id="@+id/simpleTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="581dp"
+            android:stretchColumns="1"> <!-- stretch the second column of the layout-->
+
+        <!-- first row of the table layout-->
+        <TableRow
+                android:id="@+id/firstRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <ImageButton
+                    android:layout_width="94dp"
+                    android:layout_height="81dp"
+                    android:id="@+id/imageButton4" tools:srcCompat="@tools:sample/avatars"/>
+            <Button
+                    android:text="Hotel 1"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp" android:id="@+id/button2"/>
+        </TableRow>
+        <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="?android:attr/listDivider"
+        />
+        <TableRow
+                android:id="@+id/firstRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <ImageButton
+                    android:layout_width="94dp"
+                    android:layout_height="81dp"
+                    android:id="@+id/imageButton4" tools:srcCompat="@tools:sample/avatars"/>
+            <Button
+                    android:text="Hotel 1"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp" android:id="@+id/button2"/>
+        </TableRow>
+        <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="?android:attr/listDivider"
+        />
+        <TableRow
+                android:id="@+id/firstRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <ImageButton
+                    android:layout_width="94dp"
+                    android:layout_height="81dp"
+                    android:id="@+id/imageButton4" tools:srcCompat="@tools:sample/avatars"/>
+            <Button
+                    android:text="Hotel 1"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp" android:id="@+id/button2"/>
+        </TableRow>
+
+        <TableRow
+                android:onClick="gotoHome"
+                android:id="@+id/firstRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <ImageButton
+                    android:layout_width="94dp"
+                    android:layout_height="81dp"
+                    android:id="@+id/imageButton4" tools:srcCompat="@tools:sample/avatars"/>
+            <Button
+                    android:text="Hotel 1"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp" android:id="@+id/button2"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
